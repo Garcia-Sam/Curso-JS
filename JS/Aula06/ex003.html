@@ -24,8 +24,16 @@ h1{
     <p>Já me livrei da maldição!!</p>
 
     <script>
-      var nome = window.prompt('Qual é o seu nome?') //abre janela com suporte a dados
-      window.alert("Olá! " + nome + '!') // + é de concatenação
-    </script>
+     var n1 = Number(window.prompt("Digite um número: ")) // .prompt trata tudo como string
+     
+     var n2 = Number(window.prompt("Digite outro número: "))
+    // (number + number) faz uma adição
+    // (string + string) faz uma concatenação
+
+    var soma = n1 + n2
+
+    window.alert("A soma dos dois números é: " + soma)
+
+</script>
 </body>
 </html>
