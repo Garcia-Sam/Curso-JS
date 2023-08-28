@@ -11,6 +11,7 @@ do{
 } while (contador <= 5)
 */
 
-for(var contador = 1; contador <= 1000; contador++){
+for(var contador = 1; contador <= 4; contador++){
     console.log(contador)
 }
+console.log("FIM!")
