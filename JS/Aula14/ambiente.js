@@ -11,6 +11,7 @@ do{
 } while (contador <= 5)
 */
 
+console.log("Vai começar...")
 for(var contador = 1; contador <= 4; contador++){
     console.log(contador)
 }
