@@ -6,14 +6,19 @@ function contagem(){
 
 
     if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
-        window.alert("[ERRO] Faltam Dados!")
+        res.innerHTML = "Impossível Contar!"
     } else {
-        res.innerHTML = "Contando: "
+        res.innerHTML = "Contando: <br>"
         let numinicio = Number(inicio.value)
         let numfim = Number(fim.value)
         let numpasso = Number(passo.value)
 
-        if (inicio < fim){
+        if(numpasso <= 0){
+            window.alert("Passo Inválido! Considerando PASSO 1.")
+            numpasso = 1
+        }
+
+        if (numinicio < numfim){
             // Contagem Crescente
             for(let c = numinicio; c <= numfim; c += numpasso) {
                 res.innerHTML += `${c} \u{1F449} `
